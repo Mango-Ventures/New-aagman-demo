@@ -1,0 +1,560 @@
+/* Color Palette & Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-dark: #0b2c24; /* Dark Teal Forest Green from Video */
+    --accent-gold: #c5a880;  /* Elegant Gold Accents */
+    --text-light: #f4f6f5;
+    --text-dark: #222;
+    --bg-light: #fafbfa;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.logo h2 {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    color: var(--accent-gold);
+    font-size: 12px;
+    font-style: italic;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-gold);
+}
+
+.btn-book-nav {
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--accent-gold);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-book-nav:hover {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--primary-dark);
+    padding: 80px 8% 120px 8%;
+    color: white;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.badge {
+    background-color: var(--accent-gold);
+    color: var(--primary-dark);
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #a0b2ae;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.btn-explore {
+    display: inline-block;
+    padding: 12px 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-explore:hover {
+    background-color: white;
+    color: var(--primary-dark);
+}
+
+/* Booking Bar */
+.booking-bar {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    color: var(--text-dark);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-search:hover {
+    background-color: #124035;
+}
+
+.hero-image-box {
+    flex: 0.8;
+}
+
+.video-placeholder {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://media.istockphoto.com/id/1404276183/video/mid-adult-woman-falling-on-bed-at-hotel-room.mp4?s=mp4-640x640-is&k=20&c=8mTDRUCW416xx3dQcQ9JMOfM4qgyH1gY3QSvjBIdi4w=');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--accent-gold);
+    cursor: pointer;
+}
+
+.video-placeholder i {
+    font-size: 48px;
+    color: var(--accent-gold);
+    margin-bottom: 10px;
+}
+
+/* ROOMS SECTION */
+.rooms-section {
+    padding: 80px 8%;
+}
+
+.sub-title {
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: var(--primary-dark);
+    margin-bottom: 40px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.room-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.room-img {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+}
+
+.room-details {
+    padding: 25px;
+}
+
+.room-details h3 {
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+}
+
+.amenity-tag {
+    font-size: 13px;
+    color: var(--accent-gold);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.room-desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.room-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+
+.price sub {
+    font-size: 12px;
+    color: #777;
+}
+
+.btn-book-room {
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #fff;
+    padding: 80px 8%;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-images {
+    flex: 1;
+}
+
+.about-images img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 10px 10px 0px var(--accent-gold);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.badge-gold {
+    color: var(--accent-gold);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: var(--primary-dark);
+    margin: 15px 0;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.about-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.about-features li {
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: var(--primary-dark);
+}
+
+.about-features li i {
+    color: var(--accent-gold);
+    margin-right: 10px;
+}
+
+.about-contact-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-contact-box i {
+    font-size: 32px;
+    color: var(--accent-gold);
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* STATS BAR */
+.stats-bar {
+    background-color: var(--primary-dark);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 8%;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 32px;
+    color: var(--accent-gold);
+    margin-bottom: 5px;
+}
+
+/* AMENITIES */
+.amenities-section {
+    padding: 80px 8%;
+}
+
+.section-title-center {
+    font-size: 32px;
+    text-align: center;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.amenity-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.amenity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.amenity-card i {
+    font-size: 35px;
+    color: var(--primary-dark);
+    background: rgba(11, 44, 36, 0.05);
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.amenity-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.amenity-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    background-color: var(--primary-dark);
+    color: white;
+    text-align: center;
+    padding: 80px 8%;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin: 15px 0 40px 0;
+}
+
+.testimonial-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(197, 168, 128, 0.2);
+}
+
+.stars {
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.testimonial-box p {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #cbdad7;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: #aaa;
+    padding: 60px 8% 20px 8%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 40px;
+}
+
+.footer-about {
+    flex: 1.5;
+    min-width: 250px;
+}
+
+.footer-about h2 {
+    color: white;
+}
+
+.footer-about p {
+    color: var(--accent-gold);
+    font-style: italic;
+    font-size: 12px;
+}
+
+.footer-desc {
+    margin-top: 15px;
+    line-height: 1.6;
+    color: #888 !important;
+    font-style: normal !important;
+    font-size: 14px !important;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-contact h3, .footer-links h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-contact p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-contact i {
+    color: var(--accent-gold);
+    margin-right: 8px;
+}
+
+.footer-links a {
+    display: block;
+    color: #888;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--accent-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar { padding: 15px 5%; flex-direction: column; gap: 15px; }
+    .hero-container { flex-direction: column; text-align: center; }
+    .booking-bar { flex-direction: column; width: 100%; }
+    .input-group { width: 100%; }
+    .btn-search { width: 100%; }
+    .about-container { flex-direction: column; }
+    .stats-bar { flex-direction: column; gap: 20px; }
+}
