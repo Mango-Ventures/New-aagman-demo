@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Aagaman - Begusarai | Stay in Comfort</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>Hotel Aagaman</h2>
+            <p>...Feels Like Home...</p>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="tel:09798355593" class="btn-book-nav">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="badge">WELCOME TO HOTEL AAGAMAN</span>
+                <h1>Stay in Comfort at Begusarai's Best Location – Dak Bunglow Rd</h1>
+                <p>The best hotel for your family. Feels Like Home.</p>
+                <a href="#rooms" class="btn-explore">Explore Rooms <i class="fa-solid fa-arrow-right"></i></a>
+
+                <!-- Check Availability Bar -->
+                <div class="booking-bar">
+                    <div class="input-group">
+                        <label>Check-in</label>
+                        <input type="date" value="2026-07-23">
+                    </div>
+                    <div class="input-group">
+                        <label>Check-out</label>
+                        <input type="date" value="2026-07-24">
+                    </div>
+                    <div class="input-group">
+                        <label>Guests</label>
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <button class="btn-search">Search Availability</button>
+                </div>
+            </div>
+            
+            <div class="hero-image-box">
+                <!-- Placeholder Image for Hotel Reception/Owner -->
+                <div class="video-placeholder">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Hotel Aagaman Intro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS SECTION -->
+    <section id="rooms" class="rooms-section">
+        <span class="sub-title">THE BEST YOU STAY</span>
+        <h2 class="section-title">Our Favorite Rooms</h2>
+
+        <div class="rooms-grid">
+            <!-- Deluxe Room -->
+            <div class="room-card">
+                <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=500');"></div>
+                <div class="room-details">
+                    <h3>Standard Deluxe Room</h3>
+                    <p class="amenity-tag"><i class="fa-solid fa-utensils"></i> Comfortable Rooms & Food</p>
+                    <p class="room-desc">Rooms are designed for their comfort and style with maximum convenience. Safe and secure environment.</p>
+                    <div class="room-footer">
+                        <span class="price">₹2,140<sub>/Night</sub></span>
+                        <a href="tel:09798355593" class="btn-book-room">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Room -->
+            <div class="room-card">
+                <div class="room-img" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=500');"></div>
+                <div class="room-details">
+                    <h3>Executive AC Room</h3>
+                    <p class="amenity-tag"><i class="fa-solid fa-utensils"></i> Unlimited Morning Breakfast</p>
+                    <p class="room-desc">All rooms are furnished to the highest standards with complete amenities and clean spaces.</p>
+                    <div class="room-footer">
+                        <span class="price">₹2,800<sub>/Night</sub></span>
+                        <a href="tel:09798355593" class="btn-book-room">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-images">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=400" alt="Hotel Interior">
+            </div>
+            <div class="about-content">
+                <span class="badge-gold">ABOUT US</span>
+                <h2>Welcome To Hotel Aagaman</h2>
+                <p>Where luxury meets comfort in the heart of Begusarai! Whether you're traveling for business, leisure, or family holidays, Hotel Aagaman is the perfect choice for a relaxing stay.</p>
+                
+                <ul class="about-features">
+                    <li><i class="fa-solid fa-circle-check"></i> Delicious food & comfortable rooms</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Modern, spacious, and clean rooms</li>
+                    <li><i class="fa-solid fa-circle-check"></i> High-speed WiFi and Safe Environment</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Friendly and helpful staff</li>
+                </ul>
+
+                <div class="about-contact-box">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div>
+                        <p>Book Now</p>
+                        <strong>097983 55593</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-bar">
+        <div class="stat-item"><h3>129+</h3><p>Google Reviews (4.7★)</p></div>
+        <div class="stat-item"><h3>500+</h3><p>Happy Customers</p></div>
+        <div class="stat-item"><h3>15+</h3><p>Premium Rooms</p></div>
+        <div class="stat-item"><h3>3+</h3><p>Years of Service</p></div>
+    </section>
+
+    <!-- AMENITIES SECTION -->
+    <section id="amenities" class="amenities-section">
+        <h2 class="section-title-center">Hotel Amenities</h2>
+        <div class="amenities-grid">
+            <div class="amenity-card">
+                <i class="fa-solid fa-bell"></i>
+                <h3>24-hour Room Service</h3>
+                <p>Our reception desk is open 24/7 to assist you with any inquiries or requests.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fa-solid fa-car"></i>
+                <h3>Free Parking</h3>
+                <p>Enjoy hassle-free parking with our secure and spacious parking facilities.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>On-Site Restaurant</h3>
+                <p>Enjoy delicious meals without leaving the hotel at our in-house dining kitchen.</p>
+            </div>
+            <div class="amenity-card">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>Free Internet Access</h3>
+                <p>Stay connected with our high-speed internet access available throughout the hotel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <span class="badge-gold">TESTIMONIALS</span>
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-box">
+            <div class="stars">★★★★★</div>
+            <p>"Guests say this hotel offers comfortable rooms, delicious food, and a safe and secure environment. They also highlight the friendly and helpful staff, and the great service they provide."</p>
+            <h4>- Google Verified Reviews Summary</h4>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>Hotel Aagaman</h2>
+                <p>...Feels Like Home...</p>
+                <p class="footer-desc">Providing guests with luxurious amenities and incomparable service in Begusarai.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Get In Touch</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Dak Bunglow Rd, behind Kotak Mahindra Bank and Bombay Fashion, Kali Asthan, Begusarai, Bihar</p>
+                <p><i class="fa-solid fa-phone"></i> 097983 55593</p>
+                <p><i class="fa-solid fa-envelope"></i> info@hotelaagamanbegusarai.com</p>
+            </div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#about">About Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2026 Hotel Aagaman Begusarai. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
